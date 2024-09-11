@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { User } from '../models/IUser';
+import React, { useEffect } from 'react';
 import Table from '../components/Table';
-import { getAllUsers } from '../services/UserService';
 import '../styles/Home.css';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { fetchUsers } from '../slices/userSlice';
 
 const Home: React.FC = () => {
-  const [users, setUsers] = useState<User[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const dispatch = useAppDispatch();
+  const loading = useAppSelector((state) => state.users.loading);
+  const error = useAppSelector((state) => state.users.error);
 
   useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        const usersData = await getAllUsers();
-        setUsers(usersData);
-        setLoading(false);
-      } catch (error) {
-        setError('Failed to load users');
-        setLoading(false);
-      }
-    };
-
-    fetchUsers();
-  }, []);
+    dispatch(fetchUsers());
+  }, [dispatch]);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -35,7 +24,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <h1>Users Table</h1>
-      <Table users={users} />
+      <Table />
     </div>
   );
 };
