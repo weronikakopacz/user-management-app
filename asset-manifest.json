@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/user-management-app/static/css/main.28bdb016.chunk.css",
+    "main.js": "/user-management-app/static/js/main.a8175d13.chunk.js",
+    "main.js.map": "/user-management-app/static/js/main.a8175d13.chunk.js.map",
+    "runtime~main.js": "/user-management-app/static/js/runtime~main.06a3e3e8.js",
+    "runtime~main.js.map": "/user-management-app/static/js/runtime~main.06a3e3e8.js.map",
+    "static/js/2.ae910bde.chunk.js": "/user-management-app/static/js/2.ae910bde.chunk.js",
+    "static/js/2.ae910bde.chunk.js.map": "/user-management-app/static/js/2.ae910bde.chunk.js.map",
+    "index.html": "/user-management-app/index.html",
+    "precache-manifest.f9facd4bff48b710403f68baa8c6539e.js": "/user-management-app/precache-manifest.f9facd4bff48b710403f68baa8c6539e.js",
+    "service-worker.js": "/user-management-app/service-worker.js",
+    "static/css/main.28bdb016.chunk.css.map": "/user-management-app/static/css/main.28bdb016.chunk.css.map"
+  }
+}
