@@ -1,5 +1,7 @@
 # User Management App
 
+[**Live Demo**](https://weronikakopacz.github.io/user-management-app/)
+
 React application that displays user data fetched from the JSONPlaceholder API. It features a table to show user information and advanced filtering capabilities. The application uses Redux for state management and TypeScript for type safety.
 
 ## Features
